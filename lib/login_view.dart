@@ -21,7 +21,7 @@ class LoginScreen extends StatelessWidget {
                 const Text(
                   'LOGIN',
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.white,
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
                   ),
@@ -53,26 +53,37 @@ class LoginScreen extends StatelessWidget {
                   height: 20,
                 ),
                 TextFormField(
-                    decoration: InputDecoration(
-                  hintText: 'Password',
-                  hintStyle: const TextStyle(
-                    color: Colors.grey,
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                    borderSide: const BorderSide(
-                      color: Colors.blue,
-                      width: 2.0,
-                    ),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                    borderSide: const BorderSide(
+                  decoration: InputDecoration(
+                    hintText: 'Password',
+                    hintStyle: const TextStyle(
                       color: Colors.grey,
-                      width: 2.0,
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: const BorderSide(
+                        color: Colors.blue,
+                        width: 2.0,
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: const BorderSide(
+                        color: Colors.grey,
+                        width: 2.0,
+                      ),
                     ),
                   ),
-                )),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(220, 0, 0, 0),
+                  child: TextButton(
+                    child: const Text(
+                      "Forgot Password",
+                      style: TextStyle(fontSize: 16),
+                    ),
+                    onPressed: () {},
+                  ),
+                ),
                 const SizedBox(
                   height: 20,
                 ),
@@ -92,7 +103,7 @@ class LoginScreen extends StatelessWidget {
                         'LOGIN',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 24,
+                          fontSize: 20,
                         ),
                       ),
                     ),
